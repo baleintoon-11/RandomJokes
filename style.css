@@ -79,45 +79,30 @@ button:hover {
     background: #e09b00;
 }
 
-/* Joke text with fade-in and reserved space */
-#jokeText.joke-display {
-    opacity: 1;
-    transition: opacity 0.4s ease;
+/* Joke display */
+.joke-display {
+    font-weight: bold;
+    font-size: 20px;
     min-height: 100px;
-    /* Keep consistent space reserved */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px;
+    transition: opacity 0.4s ease;
 }
 
-#jokeText:not(.visible) {
-    opacity: 0.3;
-    /* Instead of fully hiding it, dim it */
-    transition: opacity 0.2s ease;
-}
-
-
-/* Optional: center text horizontally if you prefer */
-#jokeText.centered {
-    text-align: center;
-    justify-content: center;
-}
-
-#jokeText.visible {
+.joke-display.visible {
     opacity: 1;
 }
 
-.laugh-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    z-index: 1;
+.joke-display.dimmed {
+    opacity: 0.3;
 }
 
+/* Spinner */
 #loader {
-    margin: 20px auto;
+    margin: 10px auto;
     border: 6px solid #f3f3f3;
     border-top: 6px solid #FFB100;
     border-radius: 50%;
@@ -138,4 +123,11 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+.laugh-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    z-index: 1;
 }
