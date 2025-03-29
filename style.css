@@ -147,3 +147,43 @@ button:hover {
     max-height: 400px;
     z-index: 1;
 }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .subtext {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #jokeText {
+        flex-direction: column;
+        gap: 10px;
+        min-height: 120px;
+    }
+
+    .laugh-img {
+        max-height: 250px;
+    }
+}
