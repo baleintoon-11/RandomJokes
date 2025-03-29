@@ -100,14 +100,30 @@ button:hover {
     opacity: 0.3;
 }
 
+#jokeText {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+    gap: 12px;
+}
+
+#jokeContent {
+    flex: 1;
+}
+
 /* Spinner */
 #loader {
-    margin: 10px auto;
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #FFB100;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #FFB100;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
     animation: spin 1s linear infinite;
 }
 
