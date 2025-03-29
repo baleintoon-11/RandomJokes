@@ -81,19 +81,23 @@ button:hover {
 
 /* Joke text with fade-in and reserved space */
 #jokeText.joke-display {
-    margin-top: 30px;
-    font-size: 28px;
-    font-weight: 700;
-    color: #222;
-    line-height: 1.4;
-    min-height: 100px;
-    max-width: 500px;
     opacity: 1;
     transition: opacity 0.4s ease;
+    min-height: 100px;
+    /* Keep consistent space reserved */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
+
+#jokeText:not(.visible) {
+    opacity: 0.3;
+    /* Instead of fully hiding it, dim it */
+    transition: opacity 0.2s ease;
+}
+
 
 /* Optional: center text horizontally if you prefer */
 #jokeText.centered {
