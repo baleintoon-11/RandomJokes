@@ -15,7 +15,10 @@
                 <span class="small-title">Welcome to</span>
                 <h1 class="main-title">😂 Joke Generator</h1>
                 <p class="subtext">Click the button below to lighten your mood with a random joke!</p>
-                <button id="getJoke">Get a Joke</button>
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <button id="getJoke">Get a Joke</button>
+                    <div id="loader" class="spinner hidden"></div>
+                </div>
                 <p id="jokeText" class="joke-display">Your joke will appear here 🤓</p>
             </div>
             <div class="right">
