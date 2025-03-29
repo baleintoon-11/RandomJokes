@@ -5,12 +5,16 @@ body {
     color: #333;
 }
 
+/* Full height section for vertical centering */
 .joke_section {
-    padding: 60px 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 .container {
-    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +29,9 @@ body {
     flex: 1;
     min-width: 280px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right {
@@ -83,6 +90,15 @@ button:hover {
     max-width: 500px;
     opacity: 0;
     transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Optional: center text horizontally if you prefer */
+#jokeText.centered {
+    text-align: center;
+    justify-content: center;
 }
 
 #jokeText.visible {
