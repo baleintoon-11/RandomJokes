@@ -5,8 +5,8 @@ async function getJoke() {
     const jokeText = document.getElementById("jokeText");
 
     //show spinner
-    loader.classList.remove(hidden)
-    jokeText = "";
+    loader.classList.remove("hidden")
+    jokeText.textContent = "";
 
     try {
         const res = await fetch("https://official-joke-api.appspot.com/random_joke");

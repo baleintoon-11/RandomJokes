@@ -1,41 +1,47 @@
-body {
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    background-color: #fffbe6;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.left {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+.laugh-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Optional: Enhance button for #FFEFD4 background */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background: #ffcc00;
+    background: #FFB100;
+    /* Better contrast on light background */
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Spinner Style */
-#loader {
-    margin: 20px auto;
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #ffcc00;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Hide/show helper class */
-.hidden {
-    display: none;
+button:hover {
+    background: #e09b00;
 }
