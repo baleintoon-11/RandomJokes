@@ -10,30 +10,20 @@
 
 <body>
     <section class="joke_section">
-        <div class="container-fluid padding_dd">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="text-bg">
-                        <span>Welcome to</span>
-                        <h1>😂 Joke Generator</h1>
-                        <p>Click the button below to lighten your mood with a random joke!</p>
-                        <button id="getJoke">Get a Joke</button>
-                        <p id="jokeText">Click the button to laugh!</p>
-                        <div id="loader" class="hidden"></div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="images_box">
-                        <figure><img src="laughImage.svg" alt="Laughing" class="laugh-img"></figure>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="left">
+                <span class="small-title">Welcome To</span>
+                <h1 class="main-title">Random Joke Generator</h1>
+                <p id="jokeText">Click the button to laugh!</p>
+                <button id="getJoke">Get a Joke</button>
+            </div>
+            <div class="right">
+                <img src="laughImage.svg" alt="Laughing" class="laugh-img" />
             </div>
         </div>
     </section>
 
     <script src="script.js"></script>
 </body>
-
-
 
 </html>

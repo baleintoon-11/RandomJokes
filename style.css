@@ -1,3 +1,15 @@
+/* Layout structure */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+    color: #111;
+}
+
+.joke_section {
+    padding: 60px 20px;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -11,7 +23,7 @@
 
 .left {
     flex: 1;
-    text-align: center;
+    text-align: left;
     min-width: 280px;
 }
 
@@ -23,106 +35,49 @@
     min-width: 280px;
 }
 
-.laugh-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-}
-
-/* Optional: Enhance button for #FFEFD4 background */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #FFB100;
-    /* Better contrast on light background */
-    color: #FFEFD4;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #e09b00;
-}
-
-.joke_section {
-    background-color: #FFEFD4;
-    padding: 60px 20px;
-}
-
-.text-bg {
-    padding: 20px;
-    text-align: left;
-}
-
-.text-bg span {
+/* Heading styles */
+.small-title {
     font-size: 20px;
-    color: #555;
-    font-weight: 500;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.text-bg h1 {
+.main-title {
     font-size: 48px;
-    margin-top: 10px;
-    color: #333;
+    font-weight: 800;
+    color: #4CAF50;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
 }
 
-.text-bg p {
+/* Joke paragraph */
+#jokeText {
     font-size: 18px;
-    margin: 15px 0;
-    color: #444;
+    margin-bottom: 30px;
+    max-width: 90%;
+    line-height: 1.6;
 }
 
-button#getJoke {
-    padding: 10px 25px;
+/* CTA button */
+button {
+    padding: 12px 24px;
     font-size: 16px;
-    background: #FFB100;
-    color: white;
+    background: #000;
+    color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-button#getJoke:hover {
-    background: #e09b00;
+button:hover {
+    background: #333;
 }
 
-.images_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
+/* Image styles */
 .laugh-img {
     max-width: 100%;
     height: auto;
     max-height: 400px;
-}
-
-/* Spinner */
-#loader {
-    margin-top: 15px;
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #ffcc00;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.hidden {
-    display: none;
 }
