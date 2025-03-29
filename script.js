@@ -3,8 +3,6 @@ document.getElementById("getJoke").addEventListener("click", getJoke);
 async function getJoke() {
     const jokeText = document.getElementById("jokeText");
 
-    jokeText.classList.remove("visible"); // fade out text
-
     try {
         const res = await fetch("https://official-joke-api.appspot.com/random_joke");
         const data = await res.json();
