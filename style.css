@@ -23,6 +23,7 @@ body {
 .left {
     flex: 1;
     min-width: 280px;
+    text-align: left;
 }
 
 .right {
