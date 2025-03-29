@@ -1,9 +1,8 @@
-/* Layout structure */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f2f2f2;
-    color: #111;
+    background: #FFF0D1;
+    color: #333;
 }
 
 .joke_section {
@@ -16,14 +15,13 @@ body {
     align-items: center;
     padding: 30px;
     gap: 40px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .left {
     flex: 1;
-    text-align: left;
     min-width: 280px;
 }
 
@@ -35,10 +33,9 @@ body {
     min-width: 280px;
 }
 
-/* Heading styles */
 .small-title {
     font-size: 20px;
-    color: #000;
+    color: #444;
     display: block;
     margin-bottom: 5px;
 }
@@ -46,24 +43,20 @@ body {
 .main-title {
     font-size: 48px;
     font-weight: 800;
-    color: #4CAF50;
+    color: #333;
     margin: 0 0 20px 0;
     line-height: 1.2;
 }
 
-/* Joke paragraph */
-#jokeText {
+.subtext {
     font-size: 18px;
-    margin-bottom: 30px;
-    max-width: 90%;
-    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* CTA button */
 button {
     padding: 12px 24px;
     font-size: 16px;
-    background: #000;
+    background: #FFB100;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -72,12 +65,20 @@ button {
 }
 
 button:hover {
-    background: #333;
+    background: #e09b00;
 }
 
-/* Image styles */
+#jokeText.joke-display {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.4;
+}
+
 .laugh-img {
     max-width: 100%;
     height: auto;
     max-height: 400px;
+    z-index: 1;
 }
