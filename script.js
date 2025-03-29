@@ -9,7 +9,6 @@ async function getJoke() {
 
         setTimeout(() => {
             jokeText.textContent = `${data.setup} 😂 ${data.punchline}`;
-            jokeText.classList.add("visible");
         }, 100);
     } catch (err) {
         jokeText.textContent = "❌ Couldn't fetch joke.";
