@@ -83,3 +83,7 @@ button:hover {
     max-height: 400px;
     z-index: 1;
 }
+
+.hidden {
+    display: none;
+}
